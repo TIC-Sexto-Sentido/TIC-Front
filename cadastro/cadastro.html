@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <nav id="menu">
+        <ul class="nav-bar">
+             <li class="nav-button-consulta"><a href="#">CONSULTA</a></li>
+             <li class="nav-button-cadastro"><a href="#">CADASTRO</a></li>
+             <li class="nav-button-atualizacao"><a href="#">ATUALIZAÇÃO</a></li>
+        </ul>
+   </nav>
+   
+    <div class="container">
+        <h1>Cadastro de Produto</h1>
+        <form>
+            <div class="atributo">
+                <label class="nome">Nome patrimônio:</label>
+                <input type="text" id="nome" name="nome"><br><br>
+            </div>
+
+            <div class="atributo">
+                <label for="data-entrada">Data de Entrada:</label>
+                <input type="date" id="data-entrada" name="data-entrada"><br><br>
+            </div>
+
+            <div class="atributo">
+                <label class="codigo">Código patrimônio:</label>
+                <input type="text" id="codigo" name="codigo"><br><br>
+            </div>
+
+            <div class="atributo">
+                <label class="tipo">Tipo:</label>
+                <select class="categoria" name="categoria">
+                    <option value="mobiliario">Alimentos</option>
+                    <option value="eletronicos">Eletrônicos</option>
+                    <option value="brinquedo">Vestuário</option>
+                </select><br><br>
+            </div>
+
+            <div class="atributo">
+                <label class="quantidade">Quantidade</label>
+                <input type="number" id="quantidade" name="quantidade"><br><br>
+            </div>
+
+            <div class="atributo">
+                <label class="localizacao">Localização:</label>
+                <select class="localizacao" name="localizacao">
+                    <option value="sala1">Sala 1</option>
+                </select><br><br>
+            </div>
+
+            <div class="atributo">
+                <label class="estado">Estado:</label>
+                <select class="estado" name="estado">
+                    <option value="conservado">Conservado</option>
+                    <option value="danificado">Danificado</option>
+                    <option value="inutilizado">Inutilizado</option>
+                </select><br><br>
+            </div>
+
+            <div class="atributo">
+                <label class="descricao">Descrição:</label><br>
+                <textarea class="descricao" name="descricao" rows="5" cols="40"></textarea><br><br>
+            </div>
+        </form>        
+
+        <button class="botao" type="submit">Cadastrar</button>
+    </div>
+
+</body>
+</html>
