@@ -46,10 +46,10 @@ export function Localizacao() {
   }
 
   async function handlePost() {
-    // if(!sala || !prateleira){
-    //   alert('Preencha todas as informações');
-    //   return ""
-    // }
+    if(!sala || !prateleira){
+      alert('Preencha todas as informações');
+      return ""
+    }
     const params = {
       sala: sala,
       prateleira: prateleira
@@ -147,6 +147,7 @@ export function Localizacao() {
       <div>
         <h3 style={{marginLeft: 340, marginTop: 20}}>Localizações</h3>
         <Table
+          autoHeight
           style={{marginLeft: 325, marginTop: 20,}}
           data={localizacoes}
         >
@@ -195,7 +196,7 @@ export function Localizacao() {
           </Column>
 
         </Table>
-        <Button style={{marginLeft: 765, display: 'flex'}} appearance="primary" onClick={handleOpen}>Criar Novo</Button>
+        <Button style={{marginLeft: 765, marginTop: 20}} appearance="primary" onClick={handleOpen}>Criar Novo</Button>
       </div>
 
     </div>

@@ -284,7 +284,9 @@ export function Patrimonios() {
 
       <div>
         <h3 style={{marginLeft: 260, marginTop: 20}}>Patrimônios</h3>
-        <Table style={{marginLeft: 250, marginTop: 20}}
+        <Table
+          autoHeight 
+          style={{marginLeft: 250, marginTop: 20}}
           data={patrimonios}
         >
           <Column width={80} align="center" fixed>
@@ -339,7 +341,7 @@ export function Patrimonios() {
             </Cell>
           </Column>
         </Table>
-        <Button style={{marginLeft: 925}} appearance="primary" onClick={handleOpen}>
+        <Button style={{marginLeft: 925, marginTop: 20}} appearance="primary" onClick={handleOpen}>
         Criar Novo
       </Button>
       </div>

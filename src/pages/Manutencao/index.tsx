@@ -213,6 +213,7 @@ export function Manutencao() {
       <div>
         <h3 style={{marginLeft: 340, marginTop: 20}}>Manutenções</h3>
         <Table
+          autoHeight
           style={{marginLeft: 325, marginTop: 20}}
           data={manutencoes}
         >
@@ -262,7 +263,7 @@ export function Manutencao() {
         </Table>
       </div>
 
-      <Button style={{marginLeft: 765}} appearance="primary" onClick={handleOpen}>Criar Novo</Button>
+      <Button style={{marginLeft: 765, marginTop: 20}} appearance="primary" onClick={handleOpen}>Criar Novo</Button>
     </div>
   );
 }

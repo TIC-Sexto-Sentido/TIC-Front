@@ -150,6 +150,7 @@ export function TipoPatrimonio() {
       <div>
         <h3 style={{marginLeft: 340, marginTop: 20}}>Tipos de Patrimônios</h3>
         <Table
+          autoHeight
           style={{marginLeft: 325, marginTop: 20}}
           data={tipopatrimonio}
         >
@@ -197,7 +198,7 @@ export function TipoPatrimonio() {
             </Cell>
           </Column>
         </Table>
-        <Button style={{marginLeft: 765}} appearance="primary" onClick={handleOpen}>Criar Novo</Button>
+        <Button style={{marginLeft: 765, marginTop: 20}} appearance="primary" onClick={handleOpen}>Criar Novo</Button>
       </div>
 
     </div>
